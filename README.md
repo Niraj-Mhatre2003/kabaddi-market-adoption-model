@@ -55,15 +55,6 @@ data-driven method to:
 
 ---
 
-## Repository Structure
-kabaddi-adoption-model/
-├── README.md
-├── LICENSE
-├── paper/
-│   ├── kabaddi-adoption-model.tex
-│   └── kabaddi-adoption-model.pdf
-
----
 
 ## Author
 
