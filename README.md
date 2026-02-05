@@ -56,6 +56,31 @@ data-driven method to:
 ---
 
 ## Repository Structure
+kabaddi-adoption-model/
+│
+├── README.md
+├── paper/
+│ ├── kabaddi-adoption-model.tex
+│ └── kabaddi-adoption-model.pdf
 
+
+
+
+---
+
+## Key Contributions
+
+- Unified probabilistic framework for sports adoption
+- Interpretable and explainable modeling choices
+- Combines static pre-entry analysis with dynamic post-entry learning
+- Suitable for real-world deployment and phased investments
+
+---
+
+## Author
+
+**Niraj Mhatre**
+
+---
 
 
