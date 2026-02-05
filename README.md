@@ -61,7 +61,7 @@ data-driven method to:
 **Niraj Mhatre**
 
 ---
-👉 **Read the full paper:**  
-🔗 [Download PDF](paper/modeling-kabaddi-adoption-across-countries.pdf)
+**Full paper:**  
+🔗 [Download PDF](modeling-kabaddi-adoption-across-countries.pdf)
 ---
 
