@@ -1,74 +1,61 @@
-# Modeling the Success of Kabaddi in New Countries
+# Modeling the Likelihood of Kabaddi Adoption Across Countries
 
-This repository contains my submission for **Problem 4: Why Does Kabaddi Succeed in Some Countries and Not Others?**, part of the Trosmic Sports analytical modeling assessment.
+This repository presents a structured probabilistic framework to model the likelihood
+that Kabaddi will successfully adopt in a new country.
 
-The objective of this work is to develop a principled, probabilistic framework for evaluating whether Kabaddi is likely to achieve sustained adoption in a new country and how that likelihood evolves after market entry.
+The approach treats adoption as a **latent variable** and combines:
+- Pre-entry country-level indicators
+- Hierarchical Bayesian modeling
+- Post-entry time-series and stochastic dynamics
+- Sequential Bayesian updating
+
+The framework is designed for **strategic decision-making**, **risk management**,
+and **phased investment planning** in sports market expansion.
 
 ---
 
-## Problem Context
+## Problem Motivation
 
-Kabaddi has demonstrated strong institutional success in certain regions while failing to gain long-term traction in others. These differences arise from a combination of cultural compatibility, economic capacity, infrastructure readiness, and post-entry engagement dynamics.
+Kabaddi has achieved strong popularity in some countries while failing to gain traction
+in others. Investors, league operators, and sports federations require a systematic,
+data-driven method to:
 
-The challenge is to model this uncertainty in a way that supports strategic decision-making under limited and noisy data.
+- Estimate adoption potential before market entry
+- Adapt strategies after launch
+- Monitor adoption strength over time
+- Reduce uncertainty in early-stage investments
 
 ---
 
-## Modeling Approach
+## Methodology Overview
 
-The proposed framework treats Kabaddi adoption as a **latent process** rather than a directly observable outcome.
+### 1. Pre-Entry Modeling
+- Country-level features:
+  - Cultural compatibility
+  - Economic capacity
+  - Media and digital readiness
+  - Institutional support
+  - Demographic and social indicators
+- Logistic regression with Bayesian priors
+- Regional random effects
 
-Key characteristics of the model:
+### 2. Hierarchical Bayesian Structure
+- Country-specific feature sensitivities
+- Partial pooling across similar markets
+- Reduced overfitting and improved uncertainty estimates
 
-- **Latent adoption strength** inferred from observable engagement signals
-- **Hierarchical Bayesian structure** to capture cross-country heterogeneity
-- **Dynamic evolution** of adoption after entry
-- **Explicit uncertainty modeling** suitable for early-stage decisions
-- **Interpretability**, enabling strategic insights rather than black-box predictions
+### 3. Post-Entry Adaptive Learning
+- Latent adoption dynamics modeled as a stochastic process
+- State-space models (Kalman / particle filtering)
+- Noisy observation modeling from real adoption signals
 
-The model is intentionally designed to be data-efficient and extensible as richer longitudinal data becomes available.
+### 4. Bayesian Updating
+- Continuous belief updates as new data arrives
+- Dynamic estimation of sustained adoption probability
 
 ---
 
 ## Repository Structure
 
-- `paper/`  
-  Contains the compiled PDF of the analytical write-up.
 
-- `latex/`  
-  LaTeX source files used to generate the paper.
-
-- `notes/`  
-  Conceptual extensions and future research directions.
-
-- `assets/`  
-  (Optional) Figures or diagrams used in the paper.
-
----
-
-## Key Assumptions
-
-- Success is defined as **sustained adoption** rather than short-term popularity.
-- Early-stage data is sparse and noisy, requiring probabilistic reasoning.
-- Countries share structural similarities but remain heterogeneous.
-
----
-
-## Extensions and Future Work
-
-Possible extensions of the framework include:
-- Non-linear state-space models for adoption dynamics
-- Gaussian process trajectories for long-term uncertainty modeling
-- Regime-switching models to capture adoption phases
-- Causal inference for evaluating intervention strategies
-
-These extensions are outlined conceptually in the `notes/` directory.
-
----
-
-## Author
-
-**Niraj Mhatre**
-
-This work is intended as a research-oriented modeling exercise and is designed to serve as a foundation for deeper empirical analysis.
 
